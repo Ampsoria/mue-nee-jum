@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#fff8ed" />
+  <meta name="description" content="วงล้อสุ่มอาหารและเครื่องดื่ม เลือกสถานที่ หมวดหมู่ และงบประมาณ แล้วหมุนหามื้อถัดไปของคุณ" />
+  <title>กินอะไรดี? — วงล้อสุ่มอาหารและเครื่องดื่ม</title>
+  <link rel="icon" href="assets/logo-final.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Prompt:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="กินอะไรดี หน้าแรก">
+        <span class="brand-mark" aria-hidden="true"><img src="assets/logo-final.svg" alt="" width="48" height="48" /></span>
+        <span class="brand-name">กินอะไรดี<span class="brand-question">?</span><small>FOOD PICKER</small></span>
+      </a>
+      <div class="header-note"><span class="header-note-dot"></span> หมดปัญหา “วันนี้กินอะไรดี”</div>
+    </header>
+
+    <main id="top">
+      <section class="intro" aria-labelledby="page-title">
+        <div class="intro-copy">
+          <span class="eyebrow"><span class="eyebrow-star">✳</span> LET'S EAT SOMETHING GOOD</span>
+          <h1 id="page-title">คิดไม่ออกจะกินอะไร<br /><span>ให้วงล้อช่วยเลือก!</span></h1>
+          <p>เลือกที่ที่คุณอยู่ ตั้งงบ แล้วหมุนเลย ทั้งของคาว ของกินเล่น และเครื่องดื่มก็สุ่มได้ในที่เดียว</p>
+          <div class="catalog-counter">🍲 คลังเมนูไทยและเมนูคุ้นเคย <strong id="catalog-total">35</strong> รายการ</div>
+        </div>
+        <div class="intro-art" aria-hidden="true">
+          <div class="art-spark art-spark-one">✳</div>
+          <div class="art-plate"><span>🍜</span></div>
+          <div class="art-badge">อร่อยแน่! <span>↗</span></div>
+          <div class="art-spark art-spark-two">✦</div>
+        </div>
+      </section>
+
+      <section class="picker-layout" aria-label="วงล้อสุ่มเมนู">
+        <aside class="filter-card" aria-labelledby="filter-title">
+          <div class="card-heading">
+            <div class="heading-icon">⚙</div>
+            <div><span class="card-kicker">PERSONALIZE YOUR PICK</span><h2 id="filter-title">เลือกแบบที่ใช่</h2></div>
+          </div>
+
+          <div class="filter-group">
+            <div class="group-heading"><span class="step">01</span><h3>อยากสุ่มอะไร?</h3></div>
+            <div class="type-options" id="type-options" role="group" aria-label="ประเภทเมนู">
+              <button class="type-option is-selected" type="button" data-type="all" aria-pressed="true"><span>✨</span> ทุกอย่าง</button>
+              <button class="type-option" type="button" data-type="food" aria-pressed="false"><span>🍽️</span> อาหาร</button>
+              <button class="type-option" type="button" data-type="drink" aria-pressed="false"><span>🥤</span> เครื่องดื่ม</button>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <div class="group-heading"><span class="step">02</span><h3>ตอนนี้อยู่ที่ไหน?</h3></div>
+            <div class="location-options" id="location-options" role="group" aria-label="สถานที่">
+              <button class="location-option is-selected" type="button" data-location="all" aria-pressed="true"><span>📍</span> ทุกที่</button>
+              <button class="location-option" type="button" data-location="mall" aria-pressed="false"><span>🏬</span> ห้าง</button>
+              <button class="location-option" type="button" data-location="market" aria-pressed="false"><span>🛍️</span> ตลาด</button>
+              <button class="location-option" type="button" data-location="school" aria-pressed="false"><span>🏫</span> โรงเรียน</button>
+              <button class="location-option" type="button" data-location="university" aria-pressed="false"><span>🎓</span> มหาวิทยาลัย</button>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <div class="group-heading"><span class="step">03</span><h3>หมวดหมู่</h3></div>
+            <div class="category-options" id="category-options" role="group" aria-label="หมวดหมู่เมนู"></div>
+          </div>
+
+          <div class="filter-group budget-group">
+            <div class="group-heading"><span class="step">04</span><h3>งบต่อเมนู</h3></div>
+            <div class="budget-topline"><label for="budget-input">ราคาไม่เกิน</label><div class="budget-input-wrap"><input id="budget-input" type="number" min="0" max="9999" step="1" value="150" inputmode="numeric" /><span>บาท</span></div></div>
+            <input class="budget-slider" id="budget-slider" type="range" min="20" max="300" step="10" value="150" aria-label="งบสูงสุดต่อเมนู" />
+            <div class="budget-scale"><span>฿20</span><span>฿300+</span></div>
+            <div class="budget-presets" id="budget-presets" role="group" aria-label="งบประมาณที่เลือกบ่อย">
+              <button type="button" data-budget="50">฿50</button>
+              <button type="button" data-budget="100">฿100</button>
+              <button type="button" data-budget="150" class="is-selected">฿150</button>
+              <button type="button" data-budget="all">ไม่จำกัด</button>
+            </div>
+          </div>
+        </aside>
+
+        <div class="spin-card" aria-labelledby="wheel-title">
+          <div class="spin-header">
+            <div><span class="card-kicker">SPIN & DISCOVER</span><h2 id="wheel-title">วงล้อเมนูวันนี้</h2></div>
+            <span class="match-count" id="match-count">0 เมนู</span>
+          </div>
+          <div class="wheel-stage">
+            <div class="wheel-halo"></div>
+            <div class="wheel-pointer" aria-hidden="true"></div>
+            <div class="wheel" id="wheel" aria-label="วงล้อสุ่มเมนู">
+              <div class="wheel-labels" id="wheel-labels"></div>
+            </div>
+            <div class="wheel-center" aria-hidden="true"><span class="center-spark">✳</span><strong>กิน<br>อะไร<br>ดี?</strong></div>
+            <span class="stage-spark stage-spark-a" aria-hidden="true">✦</span>
+            <span class="stage-spark stage-spark-b" aria-hidden="true">✳</span>
+          </div>
+          <button class="spin-button" type="button" id="spin-button"><span class="spin-button-icon">↻</span><span>หมุนวงล้อเลย</span><span class="spin-button-arrow">→</span></button>
+          <p class="spin-hint" id="spin-hint">เลือกได้ <strong id="match-count-inline">0</strong> เมนู กดปุ่มแล้วลุ้นกัน!</p>
+        </div>
+
+        <aside class="result-card" aria-labelledby="result-title">
+          <div class="result-heading"><span class="result-heading-icon">✦</span><div><span class="card-kicker">YOUR NEXT BITE</span><h2 id="result-title">เมนูที่ได้</h2></div></div>
+          <div id="result-content" class="result-content" aria-live="polite">
+            <div class="result-empty">
+              <div class="empty-photo"><img src="assets/pad-thai.jpg" alt="ผัดไทย" /><span class="empty-photo-sticker">?</span></div>
+              <span class="result-mini-label">รอผลสุ่มอยู่</span>
+              <h3>มื้อนี้จะได้กินอะไรนะ?</h3>
+              <p>ตั้งค่าที่ชอบ แล้วกดหมุนวงล้อ เมนูพร้อมรูปภาพจะมาแสดงตรงนี้</p>
+            </div>
+          </div>
+        </aside>
+      </section>
+      <p class="price-note">* ราคาและสถานที่เป็นเพียงตัวอย่าง อาจแตกต่างกันตามร้านและพื้นที่</p>
+    </main>
+    <footer class="site-footer"><span>© กินอะไรดี? · สร้างโดย <strong>ampsoria</strong> · เลือกง่าย อร่อยได้ทุกวัน</span><span>ภาพประกอบจาก TheMealDB, TheCocktailDB และ Wikimedia Commons · <a href="credits.html">ที่มาข้อมูลและภาพ</a></span></footer>
+  </div>
+</body>
+</html>
