@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 120" role="img" aria-labelledby="title desc">
+  <title id="title">กดไปจุ่มเมนูเลย</title>
+  <desc id="desc">ปุ่มสีส้มสำหรับเปิดเว็บไซต์มื้อนี้จุ่ม</desc>
+  <rect x="8" y="14" width="624" height="100" rx="30" fill="#F8C5A6"/>
+  <rect x="8" y="5" width="624" height="100" rx="30" fill="#F26A3D"/>
+  <circle cx="74" cy="55" r="32" fill="#FFF4E6"/>
+  <text x="74" y="66" text-anchor="middle" font-size="33">🎡</text>
+  <text x="321" y="69" text-anchor="middle" fill="#FFFDF8" font-family="'Noto Sans Thai',Thonburi,sans-serif" font-size="38" font-weight="800">กดไปจุ่มเมนูเลย</text>
+  <circle cx="571" cy="55" r="27" fill="#FFF4E6"/>
+  <path d="M561 55h19m-8-8 8 8-8 8" fill="none" stroke="#D6532C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

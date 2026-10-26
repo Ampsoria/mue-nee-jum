@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 330" role="img" aria-labelledby="title desc">
+  <title id="title">มื้อนี้จุ่ม</title>
+  <desc id="desc">แบนเนอร์สีส้มครีม มีวงล้อสุ่มเมนูและชามอาหาร</desc>
+  <rect width="1100" height="330" rx="32" fill="#FFF8ED"/>
+  <circle cx="978" cy="62" r="138" fill="#FFE6C2"/>
+  <circle cx="95" cy="314" r="112" fill="#D9EBCF"/>
+  <path d="M0 286c108-42 202-30 294 44H0Z" fill="#CFE6C5"/>
+  <g fill="#F26A3D">
+    <path d="M92 70c2 10 7 15 17 17-10 2-15 7-17 17-2-10-7-15-17-17 10-2 15-7 17-17Z"/>
+    <path d="M635 57c1.5 7 5 10.5 12 12-7 1.5-10.5 5-12 12-1.5-7-5-10.5-12-12 7-1.5 10.5-5 12-12Z"/>
+  </g>
+  <rect x="75" y="79" width="210" height="34" rx="17" fill="#FFE8D7"/>
+  <text x="180" y="101" text-anchor="middle" fill="#C9512D" font-family="'Noto Sans Thai',Thonburi,sans-serif" font-size="16" font-weight="700">จุ่มเมนูที่ใช่ในมื้อนี้ ✨</text>
+  <text x="73" y="220" fill="#29251E" font-family="'Noto Sans Thai',Thonburi,sans-serif" font-size="78" font-weight="800">มื้อนี้<tspan fill="#F26A3D">จุ่ม</tspan></text>
+  <text x="79" y="264" fill="#786F64" font-family="'Noto Sans Thai',Thonburi,sans-serif" font-size="24" font-weight="600">เลือกที่อยู่ ตั้งงบ แล้วหมุนหามื้ออร่อยกัน!</text>
+  <g transform="translate(824 168)">
+    <circle r="145" fill="#FFF" stroke="#EDDDC7" stroke-width="3"/>
+    <circle r="130" fill="#FFE3B1"/>
+    <path d="M0 0V-130A130 130 0 0 1 92-92Z" fill="#FFC19F"/>
+    <path d="M0 0 92-92A130 130 0 0 1 130 0Z" fill="#DCECC8"/>
+    <path d="M0 0H130A130 130 0 0 1 92 92Z" fill="#F8D79A"/>
+    <path d="M0 0 92 92A130 130 0 0 1 0 130Z" fill="#CBE4D9"/>
+    <path d="M0 0V130A130 130 0 0 1-92 92Z" fill="#FFC19F"/>
+    <path d="M0 0-92 92A130 130 0 0 1-130 0Z" fill="#FFE3B1"/>
+    <path d="M0 0H-130A130 130 0 0 1-92-92Z" fill="#DCECC8"/>
+    <path d="M0 0-92-92A130 130 0 0 1 0-130Z" fill="#F8D79A"/>
+    <circle r="48" fill="#FFF9EF" stroke="#FFF" stroke-width="9"/>
+    <text x="0" y="12" text-anchor="middle" font-size="36">🍜</text>
+    <path d="M-19-159 0-127 19-159Z" fill="#F26A3D"/>
+  </g>
+  <g fill="#F26A3D">
+    <circle cx="1021" cy="263" r="5"/>
+    <circle cx="1001" cy="282" r="3"/>
+    <circle cx="1043" cy="286" r="3"/>
+  </g>
+</svg>

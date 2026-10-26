@@ -1,42 +1,52 @@
-# มื้อนี้จุ่ม — GitHub Pages
+# 🍜 มื้อนี้จุ่ม
 
-เว็บวงล้อสุ่มอาหารและเครื่องดื่มแบบ static มี **126 เมนู** ใช้ HTML, CSS และ JavaScript เปิดได้โดยไม่ต้องติดตั้งแพ็กเกจหรือใช้ฐานข้อมูล
+<p align="center">
+  <img src="assets/readme-banner.svg" width="100%" alt="มื้อนี้จุ่ม วงล้อช่วยเลือกมื้ออร่อย" />
+</p>
 
-## เผยแพร่บน GitHub Pages
+<p align="center">
+  <a href="https://ampsoria.github.io/mue-nee-jum/">
+    <img src="assets/readme-cta.svg" width="420" alt="กดไปจุ่มเมนูเลย เปิดเว็บไซต์มื้อนี้จุ่ม" />
+  </a>
+</p>
 
-1. สร้าง repository ใหม่บน GitHub เช่น `mue-nee-jum` (บัญชี GitHub Free ใช้ Pages กับ repository สาธารณะ)
-2. ใน Terminal ที่โฟลเดอร์โปรเจกต์นี้ เชื่อม repository และ push ไฟล์ที่ commit แล้ว:
+<p align="center">
+  <a href="https://ampsoria.github.io/mue-nee-jum/"><strong>🌐 เปิดเว็บไซต์มื้อนี้จุ่ม</strong></a>
+  <br />
+  เลือกสถานที่ ตั้งงบ แล้วให้วงล้อช่วยตัดสินใจว่ามื้อนี้จะกินอะไร
+</p>
 
-   ```sh
-   git remote add origin https://github.com/USERNAME/mue-nee-jum.git
-   git push -u origin main
-   ```
+<p align="center">
+  <code>🍽️ 126 เมนู</code> &nbsp; <code>🥤 อาหาร + เครื่องดื่ม</code> &nbsp; <code>🎡 หมุนได้ไม่อั้น</code>
+</p>
 
-   เปลี่ยน `USERNAME` เป็นชื่อบัญชี GitHub ของคุณ และใช้ URL ของ repository ที่สร้างจริง
-3. ใน repository ไปที่ **Settings → Pages**
-4. ที่ **Build and deployment → Source** เลือก **Deploy from a branch** แล้วเลือก **main** และ **/(root)** จากนั้นกด **Save**
-5. เว็บจะอยู่ที่ `https://USERNAME.github.io/REPOSITORY/` โดยเปลี่ยน `USERNAME` และ `REPOSITORY` เป็นของคุณ
+## ✨ มีอะไรให้จุ่มบ้าง?
 
-ไฟล์ CSS, JavaScript และรูปภาพใช้ path แบบสัมพัทธ์ จึงทำงานได้ที่ URL ใต้ชื่อ repository โดยไม่ต้องแก้โค้ด
+| | |
+| --- | --- |
+| 🍚 **เมนูหลากหลาย** | อาหารคาว ของกินเล่น ของหวาน และเครื่องดื่ม รวม 126 เมนู |
+| 📍 **เลือกตามสถานที่** | สุ่มจากเมนูที่เหมาะกับห้าง ตลาด โรงเรียน หรือมหาวิทยาลัย |
+| 💸 **กำหนดงบได้** | ตั้งราคาสูงสุดต่อเมนู หรือเลือกงบที่ใช้บ่อย |
+| 🎡 **หมุนแล้วเห็นภาพ** | วงล้อสุ่มพร้อมชื่อเมนู รูปภาพ และราคาโดยประมาณ |
 
-## ทดสอบในเครื่อง
+## 🧡 วิธีเล่น
 
-เปิด Terminal ในโฟลเดอร์นี้ แล้วรัน:
+1. เลือก **อาหาร / เครื่องดื่ม** และสถานที่ที่อยู่ตอนนี้
+2. เลือกหมวดหมู่และตั้งงบ หรือปล่อยเป็น **ทุกหมวด** เพื่อสุ่มรวม
+3. กด **หมุนวงล้อเลย** แล้วไปหาเมนูที่ได้!
+
+## 🛠️ รันในเครื่อง
+
+เว็บนี้เป็น HTML, CSS และ JavaScript ธรรมดา ไม่ต้องติดตั้งแพ็กเกจ เปิด Terminal ในโฟลเดอร์โปรเจกต์แล้วรัน:
 
 ```sh
 python3 -m http.server 8000
 ```
 
-เปิด `http://localhost:8000/` ในเบราว์เซอร์
+จากนั้นเปิด `http://localhost:8000/` ในเบราว์เซอร์ ข้อมูลเมนูเพิ่มเติมอยู่ที่ `data/thai-menus.json` และรูปภาพอยู่ใน `assets/`
 
-## เนื้อหา
+## 📚 ข้อมูลและภาพ
 
-- `index.html` — หน้าเว็บ
-- `styles.css` — รูปแบบหน้าจอและวงล้อ
-- `app.js` — เมนู ตัวกรอง งบ และการสุ่ม
-- `data/thai-menus.json` — เมนูไทยเพิ่มเติม 91 รายการที่เว็บโหลดเมื่อเปิดหน้า
-- `assets/` — รูปภาพเมนูและ `logo-final.svg` สำหรับโลโก้หัวเว็บและไอคอนแท็บ
-- `credits.html` — ที่มาข้อมูลและเครดิตภาพ
-- `.nojekyll` — ให้ GitHub Pages เสิร์ฟไฟล์ static โดยตรง
+รายการเมนูไทยเพิ่มเติมคัดเลือกจาก [List of Thai dishes](https://en.wikipedia.org/wiki/List_of_Thai_dishes) แล้วจัดหมวดหมู่สำหรับเว็บนี้ ราคาและสถานที่เป็นค่าประมาณ ไม่ใช่สถิติความนิยมจริง ภาพประกอบมาจาก TheMealDB, TheCocktailDB และ Wikimedia Commons ดูรายละเอียดที่[หน้าเครดิตภาพ](https://ampsoria.github.io/mue-nee-jum/credits.html)
 
-รายชื่อเมนูไทยเพิ่มเติมคัดเลือกจาก [List of Thai dishes](https://en.wikipedia.org/wiki/List_of_Thai_dishes) และเก็บไว้ใน JSON เพื่อให้ GitHub Pages ใช้งานได้อย่างเสถียร เว็บไม่ได้ดึงสถิติการกินของผู้ใช้หรือข้อมูลราคาปัจจุบัน ราคาและสถานที่เป็นค่าประมาณที่แก้ได้ใน `app.js` และ `data/thai-menus.json` ดูที่มาภาพใน `credits.html`
+<p align="center">Made with 🧡 by <strong>ampsoria</strong></p>
