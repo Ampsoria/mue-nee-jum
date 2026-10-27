@@ -5,4 +5,7 @@
 @media(max-width:390px){.wheel-center{border-width:5px}.wheel-center strong{font-size:13px}.wheel-label{width:63px;font-size:9px}.wheel-label i{font-size:15px}.spin-button{height:55px;font-size:15px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
 .catalog-counter{display:inline-flex;align-items:center;gap:5px;margin-top:14px;padding:6px 12px;border:1px solid #e5d8c2;border-radius:100px;background:#fff4df;color:#8b6041;font-size:11px;font-weight:600}.catalog-counter strong{color:#d95831;font-weight:800}.site-footer a{color:#846c59;text-decoration:underline;text-underline-offset:2px}.site-footer a:hover{color:#d95831}
+
+.wheel-center{min-width:80px;gap:5px}
+.wheel-center strong{width:100%;white-space:nowrap}
 .brand-mark{width:50px;height:50px;background:none;border-radius:0;box-shadow:none;transform:none}.brand-mark img{display:block;width:100%;height:100%;object-fit:contain}
